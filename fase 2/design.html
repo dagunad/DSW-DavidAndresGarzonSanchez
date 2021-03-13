@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox y CSS Grid</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Temas
+                    <ul>
+                        <li>Tema 1</li>
+                        <li>Tema 2</li>
+                    </ul>
+                </li>
+                <li>Recursos Digitales
+                    <ul>
+                        <li>Recurso 1</li>
+                        <li>Recurso 2</li>
+                    </ul>
+                </li>
+                <li>Aprendizaje
+                    <ul>
+                        <li>Actividad 1</li>
+                        <li>ACtividad 2</li>
+                    </ul>
+                </li>
+                <li>Acerca de David Andres Garzon Sanchez.</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Pagina Web para aprender Flexbox y Grid CSS.</h1>
+        <p>Este sitio web permite enseñar los conceptos y métodos de maquetación HTML por 
+            medio de Flexbox y Css Grid, los cuales permitirán realizar diseños adaptados a todas 
+            las resoluciones de pantalla (Responsive), layaouts que respondan a las necesidades de 
+            usabilidad del sitio web.
+        </p>
+        <br>
+        <img src="img/flexbox-and-cssgrid.gif" alt="Flexbox y Css Grid" height="200" width="400">
+    </section>
+    <article>
+        <h2>Maquetacion CSS</h2>
+        <p>Gracias al CSS se puede independizar el contenido de un documento HTML de su presentación, esto posibilita una mayor 
+            escalabilidad, mayor rendimiento y un mantenimiento más efectivo, a este proceso de diseñar un documento HTML se 
+            le conoce como maquetar una página web, haciendo que el código HTML sea el esqueleto y el código CSS sea la disposición y 
+            apariencia del layout.
+        </p>
+        <p>
+            Hoy día la maquetación de un documento HTML por medio de CSS se puede hacer por medio de tres maneras maquetación por medio 
+            de la propiedad float y display, Flexbox y Css Grid. La diferencia básica entre CSS Grid Layout y CSS Flexbox Layout es que Flexbox 
+            se creó para diseños de una dimensión, en una fila o una columna. En cambio CSS Grid Layout se pensó para el diseño bidimensional, 
+            en varias filas y columnas al mismo tiempo. 
+        </p>
+        <p>A continuación, veremos las dos últimas formas de maquetar Flexbox y Css Grid.</p>
+        <br>
+        <img src="img/diferencia Flexbox y CSS Grids.png" alt="diferencia entre Flexbox y Css Grid">
+        <h3>Flexbox</h3>
+        <p>Cuando se describe a flexbox como unidimensional destacamos el hecho que flexbox maneja el layout en una sola dimensión a la vez, 
+            ya sea como fila o como columna.
+        </p>
+
+        <h4>Orientacion</h4>
+        <img src="img/flexbox-orientacion.png" alt="">
+
+        <p>
+            Es importante saber que para utilizar flexbox se requiere que el elemento contenedor tenga la propiedad display con valor de flex, 
+            todos los item dentro del estecontenedor seguira el flujo, alineacion y justificacion regida por las reglas establecidas por el usuario
+            o en su defecto por lo valores por defecto de cada propiedad.
+        </p>
+
+        <h4>Justificar Contenido</h4>
+        <img src="img/flexbox-justificacion.png" alt="">
+
+        <h4>Alinear Elementos</h4>
+        <img src="img/flexbox-alinear-elementos.png" alt="">
+
+        <h4>Alinear Contenido</h4>
+        <img src="img/flexbox-alineacion.png" alt="">
+
+        <h3>Css Grid</h3>
+        <p>CSS Grid es un sistema de diseño bidimensional basado en cuadrículas que tiene como objetivo cambiar completamente la forma 
+            en que se diseña interfaces de usuario basadas en cuadrículas (Bidimensional). 
+            Al igual que las tablas, el grid layout permite a un autor alinear elementos en columnas y filas. Sin embargo, con CSS grid son
+            posibles muchos más diseños y de forma más sencilla que con las tablas.
+        </p>
+        <p>
+            Al igual que pasa con Flexbox se requiere que el elemento contenedor tenga la propiedad display con valor de grid, todos los item 
+            dentro del estecontenedor seguira el flujo, alineacion y justificacion regida por las reglas establecidas por el usuario o en su defecto 
+            por lo valores por defecto de cada propiedad.
+        </p>
+        <img src="img/grid-0.jpg" alt="grid configuracion" height="300" width="400">
+
+        <h4>Configurando el Layout en columnas y filas</h4>
+        <img src="img/grid-1.jpg" alt="Configurando el Layout en columnas y filas" height="300" width="500">
+
+        <h4>La unidad fr</h4>
+        <img src="img/grid-2.jpg" alt="la unidad fr" height="500" width="700">
+
+        <h4>áreas de plantilla de cuadrícula</h4>
+        <p>Define una plantilla de cuadrícula haciendo referencia a los nombres de las áreas de cuadrícula que se especifican con la grid-areapropiedad. 
+            La repetición del nombre de un área de cuadrícula hace que el contenido abarque esas celdas. Un punto significa una celda vacía. La sintaxis 
+            en sí misma proporciona una visualización de la estructura de la cuadrícula.
+        </p>
+        <img src="img/grid-3-1.jpg" alt="áreas de plantilla de cuadrícula" height="400" width="600">
+        <img src="img/grid-3-2.jpg" alt="áreas de plantilla de cuadrícula" height="400" width="600">
+
+        <h4>espacio entre columnas espacio entre filas</h4>
+        <p>Define una plantilla de cuadrícula haciendo referencia a los nombres de las áreas de cuadrícula que se especifican con la grid-areapropiedad. 
+            La repetición del nombre de un área de cuadrícula hace que el contenido abarque esas celdas. Un punto significa una celda vacía. La sintaxis 
+            en sí misma proporciona una visualización de la estructura de la cuadrícula.
+        </p>
+        <img src="img/grid-4.jpg" alt="espacio entre columnas espacio entre filas" height="400" width="600">
+
+        <h4>Justificar elementos</h4>
+        <p>Alinea los elementos de la cuadrícula a lo largo del eje en línea (fila) (en oposición al align-itemsque se alinea a lo largo del eje del bloque (columna) ). 
+            Este valor se aplica a todos los elementos de la cuadrícula dentro del contenedor.
+        </p>
+        <img src="img/grid-5-1.jpg" alt="Justificar elementos start end" height="600" width="400">
+        <img src="img/grid-5-2.jpg" alt="Justificar elementos center stretch" height="600" width="400">
+
+        <h4>Alinear elementos</h4>
+        <p>Alinea los elementos de la cuadrícula a lo largo del eje del bloque (columna) (en oposición al justify-itemsque se alinea a lo largo del eje en línea (fila) ). 
+            Este valor se aplica a todos los elementos de la cuadrícula dentro del contenedor.
+        </p>
+        <img src="img/grid-6-1.jpg" alt="Alinear elementos start end" height="600" width="400">
+        <img src="img/grid-6-2.jpg" alt="Alinear elementos center stretch" height="600" width="400">
+
+        <h4>Justificar Contenido</h4>
+        <p>A veces, el tamaño total de su cuadrícula puede ser menor que el tamaño de su contenedor de cuadrícula. Esto podría suceder si todos los elementos de su cuadrícula 
+            tienen el tamaño de unidades no flexibles como px. En este caso, puede establecer la alineación de la cuadrícula dentro del contenedor de la cuadrícula. Esta propiedad 
+            alinea la cuadrícula a lo largo del eje en línea (fila) (a diferencia de lo align-contentque alinea la cuadrícula a lo largo del eje del bloque (columna) ).
+        </p>
+        <img src="img/grid-7-1.jpg" alt="Justificar Contenido start end" height="600" width="300">
+        <img src="img/grid-7-2.jpg" alt="Justificar Contenido center stretch" height="600" width="300">
+        <img src="img/grid-7-3.jpg" alt="Justificar Contenido space-around" height="600" width="300">
+        <img src="img/grid-7-4.jpg" alt="Justificar Contenido space-between" height="600" width="300">
+
+        <h4>Alinear Contenido</h4>
+        <p>A veces, el tamaño total de su cuadrícula puede ser menor que el tamaño de su contenedor de cuadrícula. Esto podría suceder si todos los elementos de su cuadrícula tienen 
+            el tamaño de unidades no flexibles como px. En este caso, puede establecer la alineación de la cuadrícula dentro del contenedor de la cuadrícula. Esta propiedad alinea la 
+            cuadrícula a lo largo del eje del bloque (columna) (a diferencia de lo justify-contentque alinea la cuadrícula a lo largo del eje en línea (fila) ).
+        </p>
+        <img src="img/grid-8-1.jpg" alt="Alinear Contenido start" height="600" width="300">
+        <img src="img/grid-8-2.jpg" alt="Alinear Contenido end" height="600" width="300">
+        <img src="img/grid-8-3.jpg" alt="Alinear Contenido center" height="600" width="300">
+        <img src="img/grid-8-4.jpg" alt="Alinear Contenido stretch" height="600" width="300">
+        <img src="img/grid-8-5.jpg" alt="Alinear Contenido space-around" height="600" width="300">
+        <img src="img/grid-8-6.jpg" alt="Alinear Contenido space-between" height="600" width="300">
+        <img src="img/grid-8-7.jpg" alt="Alinear Contenido space-evenly" height="600" width="300">
+
+    </article>
+    <article>
+        <h3>Mockup del diseño del sitio</h3>
+        <img src="img/design.html.png" alt="mockup del sitio">
+    </article>
+    <footer>dagarzonsa@unadvirtual.edu.co | davidcosmos1@hotmail.com | Actualizado en: 06 Marzo de 2021</footer>
+</body>
+</html>

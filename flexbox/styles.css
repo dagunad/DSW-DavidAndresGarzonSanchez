@@ -1,0 +1,54 @@
+@media(min-width:768px) {
+    .container {
+        /*propiedad que permite definir el layout con flexbox*/
+        display: flex;
+    }
+
+    .container-two {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .box-content {
+        width: 25%;
+        /*es igual a esto  width: 25%;*/
+        flex-basis: 25%;
+    }
+}
+
+.container-three {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container div, .container-two div, .container-three div {
+    /*estilos comunes para mejor visualizacion de las cajas*/
+    background: rgb(233, 233, 233);
+    border: 1px rgb(116, 113, 113) solid;
+    padding: 12px;
+}
+
+.box-one {
+    /**cantidad de longitud calculada*/
+    flex: 2;
+    /*orden de la caja dentro del contenedor flex*/
+    order: 2;
+    /*alinea los items hijos del contenedor flex arriba, abajo o medio*/
+     align-items:flex-end; 
+}
+
+.box-two {
+    flex: 4;
+    order: 1;
+}
+
+.box-three {
+    flex: 2;
+    order: 3;
+}
+
+.box-content-three {
+    flex-basis: 15%;
+}
+
